@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SafeRoute Odyssey{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>SafeRoute Odyssey</h1>
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Content block that child templates will fill in -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 SafeRoute Odyssey. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: Load JavaScript files -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

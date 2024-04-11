@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Question styles */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Correct answer styles */
+.correct-answer {
+    font-weight: bold;
+    color: green;
+}
+
+/* Form submission button styles */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
